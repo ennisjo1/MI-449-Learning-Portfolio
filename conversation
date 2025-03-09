@@ -1,0 +1,18 @@
+The issue with the code is that the `x-data` directive is not correctly formatted for Alpine.js. The `$fetchjson` function is not a built-in Alpine.js function. You need to use Alpine.js's `x-init` directive to fetch the JSON data and set the `thumbImage` variable.
+
+Here is the corrected code:
+
+```html
+---
+layout: layout.liquid
+title: 11ty Boilerplate
+---
+
+<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
+
+<div x-data="{ thumbImage: '' }" x-init="fetch('https://dummyjson.com/products/1')
+    .then(response => response.json())
+    .then(data => thumbImage = data.thumbnail)">
+    <img x-bind:src="thumbImage"/>
+</div>
+```

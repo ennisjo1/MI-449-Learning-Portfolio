@@ -1,0 +1,23 @@
+---
+layout: layout.liquid
+title: Assignment
+---
+<main>
+    <h2 class="page_heading">Welcome to the Week 7 Product Showcase</h2>
+    <h2 class="page_description">The Item's below are ready to go if your name is called<h2>
+        <div id="product_page">
+            <div x-data="{ thumbImage: '' }" x-init="fetch('https://dummyjson.com/products/1')
+                .then(response => response.json())
+                .then(data => thumbImage = data.thumbnail)">
+                <img class="oj" x-bind:src="thumbImage" />
+            </div>
+            <div x-data="{ thumbImage: '' }" x-init="fetch('https://dummyjson.com/products/2')
+                .then(response => response.json())
+                .then(data => thumbImage = data.thumbnail)">
+                <img class="oj" x-bind:src="thumbImage" />
+            </div>
+        </div>
+    <div>
+        <button id="purple"> Click Me! </button>
+    </div>
+</main>

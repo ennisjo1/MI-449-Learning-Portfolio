@@ -8,7 +8,7 @@ body {
 
 nav {
     margin: 40px auto 0 auto;
-    width: 250px;
+    width: 70vw;
     border-radius: 50px;
     background: #212431;
 }
@@ -33,18 +33,51 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
-}
-
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 img.about {
     opacity: 0.5;
+}
+#Sam {
+    width: 20vw;
+    background-color: whitesmoke;
+}
+
+.oj{
+    width: 25vw;
+    background-color: rgb(153, 153, 153);
+    height:25vw;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+
+#product_page{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.page_heading{
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+#purple{
+    background-color: seashell;
+    color: black;
+    border-radius: 10px;
+    width: 25vw;
+}
+
+.page_description{
+    font-size: 1.5em;
+    margin-bottom: 2vh;
+}
+#AIEX{
+    display: flex;
+    justify-content: space-evenly;
+}
+.AIEX_img{
+    max-width: 50vw;
+    max-height: 30vh;
+    margin:20px;
 }
