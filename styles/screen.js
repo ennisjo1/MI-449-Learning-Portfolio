@@ -1,3 +1,8 @@
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://dnychhfgjwxvtfgfpqwq.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 function orange(){
     alert("hello");
@@ -14,6 +19,10 @@ function RandomName(){
     let x = getRandomIntInclusive(0, 9);
     alert( names[ x ] );
 }
+
+let { data: 8.5 Lab, error } = await supabase
+  .from('8.5 Lab')
+  .select('*')
 
 window.onload = function(){
     const purple = document.getElementById("purple");
