@@ -1,41 +1,71 @@
+:root{
+    --primary-background-color:#2D3142;
+    --primary-text-color:#EAE8FF;
+    --primary-nav-color:#212431;
+    --primary-nav-img-color:#7c7c7c;;
+}
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
+    color: var(--primary-text-color);
+    background: var(--primary-background-color);
     text-align: center;
 }
 
 nav {
-    margin: 40px auto 0 auto;
-    width: 70vw;
-    border-radius: 50px;
-    background: #212431;
+    display:flex;
+    width: 100vw;
+    background: var(--primary-nav-color);
 }
 
-nav ul {
+.first_layer_list{
+    width: 80vw;
+    height: 20vh;
+    justify-content: space-around;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4vh;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.first_list_item{
     list-style-type: none;
     margin: 0;
-}
-
-nav ul li a {
+    justify-content: center;
+    align-items: baseline;
     display: inline-block;
     padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
 }
 
-img.about {
-    opacity: 0.5;
+
+.second_list {
+    display:none; 
+    margin:0;
+    position: absolute;
+    color:var(--primary-text-color);
+    background-color: #3c3c3c;
+    z-index: 1;
+    width:1em;
+    height:max-content; 
 }
+
+ul.second_list{
+    width:18vw;
+}
+
+.assignment_second_list:hover .second_list {
+    display: block;
+    
+  }
+  
+
+#Panda {
+    background-color: var(--primary-nav-img-color);
+    border-radius: 20%;
+    width: 10vw;
+
+}
+
 #Sam {
     width: 20vw;
     background-color: whitesmoke;
@@ -71,6 +101,7 @@ img.about {
 .page_description{
     font-size: 1.5em;
     margin-bottom: 2vh;
+    font-weight: normal;
 }
 #AIEX{
     display: flex;

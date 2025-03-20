@@ -15,13 +15,7 @@ title: 11ty Boilerplate
   <script src="/styles/x.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/Assignment/" title="Assignment">Assignment</a></li>
-      <li><a href="/AIEX/" title="AIEX">AI Exsperience</a></li>
-    </ul>
-  </nav>
-    {{ content }}
+  {% include 'nav' %}
+  {{ content }}
 </body>
 </html>
